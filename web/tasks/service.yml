@@ -1,0 +1,4 @@
+--- 
+ - name: start Apache2 service
+   service: name=apche2 state=started
+
