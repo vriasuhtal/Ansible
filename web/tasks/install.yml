@@ -1,0 +1,4 @@
+---
+
+ - name: install aApache2
+   apt: name=apache2 update_cache=yes state=latest
