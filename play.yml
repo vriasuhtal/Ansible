@@ -1,0 +1,15 @@
+Always playbook should start from ---
+#if sudo not work we can used become as a sudo 
+---
+ - hosts: slave1 #from inventory 
+   become: yes
+   name: Play 1
+   tasks:
+# Task is nothing but the list hence denoted by {-}
+
+     - name: Install Apache2
+       apt:
+        name: apache2
+        state: present
+#Open /etc/apache2/ports. conf in any editor. Replace 80 with your desired port number, for example 8080
+#ch
