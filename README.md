@@ -35,3 +35,11 @@ sudo ansible-galaxy init web --offline         #rolename --web
 - include: service.yml
 
 - sudo ansible-playbook site.yml --syntax-check to run site.yml
+
+- ---------------------------------------------------
+after creating playbook we will keep this data safe in git so for it 
+git remote set-url origin https://<token id >@github.con/<username>/repo name     intiate the git push with the help of token
+git push -u origin main
+
+remember before pushing we need to pull 
+
